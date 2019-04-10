@@ -1,0 +1,22 @@
+import random
+a = random.randint(0,500)
+count = 0
+#数据处理
+while True:
+    # 令用户输入一个结果
+    num = int(input('Please input a number'))
+    count += 1
+    #将用户输入的数字与给定的数据进行对比
+    if num == a:
+    #如果相等，输出正确提示，结束程序
+        print('%d is the number,you are right. You have guess %d times'%(num,count))
+    #如果不相等
+        exit()
+    #如果偏大，给出偏大的提示
+    else:
+        if num > a:
+            print('%d is too large'%num)
+    #如果偏小，给出偏小的提示
+        else:
+            print('%d is too small'%num)
+    #让用户继续猜

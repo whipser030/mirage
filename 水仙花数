@@ -1,0 +1,17 @@
+while True:
+    # 准备一个三位数值
+    # 令用户输入一个数据
+    num = int(input('please insert a number:'))
+
+    # 判定用户输入的是否是三位数
+    if 100 <= num < 1000:
+        a = num//100
+        b =(num - (a * 100))//10
+        c = num - (a * 100) - b*10
+    # 判定该三位数是否是水仙花数
+        if a**3 + b**3 + c**3 == num:
+            print(num,'is a 水仙花数')
+        else:
+            print('not 水仙花')
+    else:
+        print('This is not 水仙花数')

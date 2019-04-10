@@ -12,7 +12,7 @@ while True:
         print('%d is the number,you are right. You have guess %d times'%(num,count))
     #如果不相等
         exit()
-    #如果偏大，给出偏大的提示
+    #如果偏大，则给出偏大的提示
     else:
         if num > a:
             print('%d is too large'%num)
